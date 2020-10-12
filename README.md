@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="public/logo512.png" alt="FOSSDorm" width="250" height="250"></p>
+<h1 align="center">FOSSDorm</h1>
 
-## Available Scripts
+<div align="center">
+  <strong>Build your open source profile</strong><br>
+  A <a href="https://www.gnome.org/challenge/">GNOME Challenge 2020 </a> project that aims to bring, engage, and retain new contributors to the open source community.
+</div>
+<br/>
+It is a 100% free and open source platform to help newcomers find open source projects based on their skill preference, then learn how to contribute to the selected project, and engage them for the long term.
 
-In the project directory, you can run:
+## Why FOSSDorm?
 
-### `npm start`
+FossDorm aims to bring new contributors to the open source community and engage them forever. To achieve the same target, the app fulfills three basic needs:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Where to find my skill-based suitable project: GitHub is a large ocean where new contributors find hard to search for project meeting their demands. Hence, this app has a section listing all verified and approved open source project.
+2. How to contribute: Even after finding a project, contributors sometimes fail to engage with the community. Documentation for beginners is one of the main reasons. Hence, each project in this app will contain a must-have page providing a minimum of three details in both text and video format. That is, about the project, how to set up a project and get started, and how to stay in touch with the community.
+3. How to engage contributors forever: Contributors need to manually paste their merged code link into the app to get a reputation point or badges. This will encourage and also build their profile displaying the amount of open source contribution.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## How To Use FOSSDorm?
 
-### `npm test`
+## How To Contribute To FOSSDorm?
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Set up local environment
 
-### `npm run build`
+#### Find bugs and report
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Suggest new features
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Contact US

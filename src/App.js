@@ -1,15 +1,18 @@
 import React from 'react';
-import logo from './logo.png';
-import './App.css';
+import Layout from "./hoc/layout/layout";
+import { Switch, Route } from "react-router-dom";
+import './App.scss';
+import Home from './pages/home/home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        Welcome to FOSSDorm!!!
-      </header>
-    </div>
+    <>
+      <Layout>
+        <Switch>
+          <Route path="/" exact component={Home} />
+        </Switch>
+      </Layout>
+    </>
   );
 }
 

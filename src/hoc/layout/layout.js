@@ -1,13 +1,13 @@
 import React from "react";
-// import Footer from "../../components/footer/footer";
-// import Navbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
+import Header from "../../components/header/header";
 
 const Layout = props => {
 	return (
 		<div>
-			{/* <Navbar /> */}
+			<Header />
 			{props.children}
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 };

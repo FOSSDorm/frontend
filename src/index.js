@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
-import ScrollToTop from "./hoc/scrollToTop/scrollToTop";
+// import ScrollToTop from "./hoc/scrollToTop/scrollToTop";
 
 const app = (
       <BrowserRouter>
-        <ScrollToTop>
+        {/* <ScrollToTop> */}
           <App />
-        </ScrollToTop>
+        {/* </ScrollToTop> */}
       </BrowserRouter>
 );
 

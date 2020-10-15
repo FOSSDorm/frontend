@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from "./hoc/layout/layout";
 import { Switch, Route } from "react-router-dom";
-import './App.scss';
 import Home from './pages/home/home';
 
 function App() {

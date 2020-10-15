@@ -1,7 +1,9 @@
 .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1.2rem;
-    color: red;
+    font-family: 'Typewriter-light';
+   .bg-light{
+       background-color: #17479E !important;
+   }
+   .nav-link, .navbar-brand{
+       color: white !important;
+   }
 }

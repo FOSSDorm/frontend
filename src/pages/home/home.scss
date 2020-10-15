@@ -1,11 +1,19 @@
 .home {
+  font-family: 'Typewriter-light';
   .logo_div {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 20px;
     .logo {
       height: 150px;
       width: 150px;
+    }
+  }
+  .intro{
+    text-align: center;
+    p{
+      padding: 0 20px;
     }
   }
 }

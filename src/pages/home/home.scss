@@ -1,5 +1,8 @@
 .home {
-  font-family: 'Typewriter-light';
+  font-family: "Typewriter-light";
+  h2{
+    font-family: "Typewriter-light";
+    }
   .logo_div {
     display: flex;
     flex-direction: row;
@@ -10,10 +13,23 @@
       width: 150px;
     }
   }
-  .intro{
+
+  .home_text_center {
     text-align: center;
-    p{
-      padding: 0 20px;
+    padding: 1%;
+    p {
+      padding: 0 10px;
+    }
+  }
+  .badges{
+    display: flex;
+    text-align: center;
+    padding:10px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+      height: 200px;
+      width: auto;
     }
   }
 }

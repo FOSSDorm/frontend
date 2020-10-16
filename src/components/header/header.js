@@ -1,13 +1,14 @@
 import React from "react";
 import "./header.scss";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          FOSSDorm — Build Your Open Source Profile
-        </a>
+        <NavLink to="/" exact className="navbar-brand">
+          FOSSDorm
+        </NavLink>
         <button
           class="navbar-toggler"
           type="button"
@@ -23,19 +24,40 @@ const Header = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                Projects{" "}
-              </a>
+              <NavLink
+                to="/projects"
+                exact
+                className="nav-link"
+                activeClassName="activeNavColor"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+              >
+                Projects
+              </NavLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <NavLink
+                to="/login"
+                exact
+                className="nav-link"
+                activeClassName="activeNavColor"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+              >
                 Log In
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <NavLink
+                to="/signup"
+                exact
+                className="nav-link"
+                activeClassName="activeNavColor"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+              >
                 Sign Up
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

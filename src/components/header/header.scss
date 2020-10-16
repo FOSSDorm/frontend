@@ -1,9 +1,41 @@
-.header{
-    font-family: 'Typewriter-light';
-   .bg-light{
-       background-color: #17479E !important;
-   }
-   .nav-link, .navbar-brand{
-       color: white !important;
-   }
+.header {
+  font-family: "Typewriter-light";
+  .bg-light {
+    background-color: #17479e !important;
+  }
+  .navbar {
+    .nav-link,
+    .navbar-brand {
+      color: white !important;
+    }
+  
+    .navbar-brand:hover {
+      transform: rotate(2deg) scale(1.05);
+      transition: transform 0.8s;
+    }
+    .navbar-toggler {
+      background-color: white !important;
+    }
+    .nav-link:hover {
+      transform: scale(1.2);
+      transition: transform 0.1s;
+    }
+    .activeNavColor {
+      color: #f9f871 !important;
+    }
+  }
+}
+// media queries
+
+@media only screen and (max-width: 990px) {
+  .navbar{
+    .nav-link{
+      text-align: center;
+    }
+    .nav-link:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+  }
+  
 }

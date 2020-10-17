@@ -28,11 +28,9 @@ const TimelineDiv = () => {
               <div class="circle">1</div>
             </div>
             <div class="col-6">
-              <h4 className="highlight_text">Search Project</h4>
+              <h4 className="highlight_text">Choose Project</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                porttitor gravida aliquam. Morbi orci urna, iaculis in ligula
-                et, posuere interdum lectus.
+                Select desired open source project based on your programming langugae skill and difficulty level. 
               </p>
               <button
                 type="button"

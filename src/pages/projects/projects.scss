@@ -1,0 +1,29 @@
+.projects {
+  font-family: "Typewriter-light";
+  padding: 1%;
+  .projects_div {
+    display: flex;
+    flex-flow: column wrap;
+    
+    .filters {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      padding: 2%;
+      .language, .level{
+          padding: 1%;
+          text-align: center;
+      }
+    }
+    .project_list {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 2%;
+    }
+    .ui.selection.dropdown .menu>.item {
+        .text{
+            padding-left: 2%;
+        }
+    }
+  }
+}

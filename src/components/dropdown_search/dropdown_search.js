@@ -63,6 +63,7 @@ const DropdownSearch = (props) => (
     multiple
     search
     selection
+    onChange={props.handleChange}
     options={props.option==="language"?languageOptions:levelOptions}
   />
 );

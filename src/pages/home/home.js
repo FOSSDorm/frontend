@@ -3,8 +3,8 @@ import logo from "../../assets/images/logo.png";
 import "./home.scss";
 import Timeline from "../../components/timeline/timeline";
 import { Link } from "react-router-dom";
-import CEChallangeCompetitorBadge from '../../assets/images/CEChallenge-badge.png'
-import CEChallangePOneBadge from '../../assets/images/CEChallenge-P1Winner2.png'
+import CEChallangeCompetitorBadge from "../../assets/images/CEChallenge-badge.png";
+import CEChallangePOneBadge from "../../assets/images/CEChallenge-P1Winner2.png";
 
 class Home extends Component {
   // constructor(props) {
@@ -45,9 +45,11 @@ class Home extends Component {
                 href="https://github.com/FOSSDorm"
                 rel="noopener noreferrer"
                 target="_blank"
-                style={{color: "black",fontSize:"1.3rem" }}
+                style={{ color: "black", fontSize: "1.3rem" }}
               >
-<i aria-hidden="true" class="github icon"></i>              </a>to help newcomers
+                <i aria-hidden="true" class="github icon"></i>{" "}
+              </a>
+              to help newcomers
               <span className="highlight_text"> find </span>
               open source projects based on their skill preference, then
               <span className="highlight_text"> learn </span>
@@ -57,8 +59,18 @@ class Home extends Component {
             </p>
           </div>
           <div className="badges">
-            <div><img src={CEChallangeCompetitorBadge} alt="CEChallenge Competitor Badge"/></div>
-            <div><img src={CEChallangePOneBadge} alt="CEChallenge Phase 1 Winner Badge"/></div>
+            <div>
+              <img
+                src={CEChallangeCompetitorBadge}
+                alt="CEChallenge Competitor Badge"
+              />
+            </div>
+            <div>
+              <img
+                src={CEChallangePOneBadge}
+                alt="CEChallenge Phase 1 Winner Badge"
+              />
+            </div>
           </div>
           <Timeline />
           <div className="submit_projects home_text_center">
@@ -68,15 +80,15 @@ class Home extends Component {
               developer submit their open source project hosted at GitHub.
             </p>
             <p>
-              Follow&nbsp;
+              Refer&nbsp;
               <Link
                 to={{
                   pathname: "/guide-to-submit-project",
                 }}
               >
-                 this 
+                this page
               </Link>
-              &nbsp;guide get your project listed on
+              &nbsp;to get your project listed on
               <span className="highlight_text"> FOSSDorm</span>.
             </p>
           </div>

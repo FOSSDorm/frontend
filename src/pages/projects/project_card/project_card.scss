@@ -1,6 +1,9 @@
 .ui.items{
     width: 50%;
 }
+.ui.items>.item{
+    padding: 1rem !important;
+}
 @media only screen and (max-width: 700px) {
     .ui.items{
         width: 100%;

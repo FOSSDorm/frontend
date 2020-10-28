@@ -51,27 +51,29 @@ Whether you're a developer or not, you can contribute to FOSSDorm in any of the 
   
 - Website design
 
-#### Set up local environment
+### Set up local environment
 Before setting up project locally, you must have the following tools installed on your system:
 - Git
 - NPM
 
-1. Fork the frontend repository
+**1. Fork the frontend repository**
+
 <p align="center"><img src="docs/images/readme/fork_the_repo.png" alt="Fork the repo" width="auto" height="auto"></p>
-2. Clone your own copy of repo
+
+**2. Clone your own copy of repo**
 
 ```
 git clone https://github.com/<username>/frontend.git
 ```
 Here replace `<username>` with your own github username
 
-3. Install dependencies
+**3. Install dependencies**
 
 ```
 cd frontend
 npm install
 ```
-4. Run site at localhost
+**4. Run site at localhost**
 
 ```
 npm start
@@ -79,8 +81,9 @@ npm start
 If you're able to see website running at localhost, then you're ready to make change and contribute.
 <p align="center"><img src="docs/images/readme/localhost_run_successfully.png" alt="localhost site run successfully" width="auto" height="auto"></p>
 
-#### Make changes and create pull request
-1. Create your own branch and checkout
+### Make changes and create pull request
+**1. Create your own branch and checkout**
+
 Though you can also make changes in your `main` branch and create pull request, we highly recommend you to make your own new branch and checkout to it before making any changes.
 
 ```
@@ -96,16 +99,19 @@ git branch
 
 <p align="center"><img src="docs/images/readme/create_branch_checkout.png" alt="Create branch and checkout" width="auto" height="auto"></p>
 
-2. Make changes
+**2. Make changes**
+
 Once you switch to a new branch, make changes you want.
-3. Commit new changes
+
+**3. Commit new changes**
 Once you're done testing your new changes at localhost, save the work by running commands:
 ```
 git add .
 git commit -m "<message>"
 ```
 Here replace `<message>` with a small description of your new changes. e.g. "add contact us page", "fix docs".
-4. Push local changes to remote
+
+**4. Push local changes to remote**
 ```
 git remote --set-upstream origin <new-branch-name>
 ```
@@ -113,7 +119,7 @@ If you're prompted to enter GitHub username and password, enter your credential 
 <p align="center"><img src="docs/images/readme/push_changes.png" alt="Push new changes" width="auto" height="auto"></p>
 Next time, you can only run `git push` to push new changes to remote.
 
-5. Create pull request
+**5. Create pull request**
 
 Once you push all changes to your remote GitHub server, go to your own GitHub account >> `frontend` repo and you'll see a notification of new changes.
 

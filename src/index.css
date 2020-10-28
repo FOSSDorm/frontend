@@ -14,15 +14,19 @@ code {
 }
 
 .highlight_text {
-  font-family: "Typewriter-dark";
+  font-family: "AvenirNextProB";
   color: #17479e;
 }
 
 @font-face {
-  font-family: 'Typewriter-light';
-  src: local('Typewriter-light'), url(./assets/fonts/JMH\ Typewriter.ttf) format('truetype');
+  font-family: 'AvenirNextProR';
+  src: local('AvenirNextProR'), url(./assets/fonts/AvenirNextLTPro-Regular.otf) format('opentype');
 }
 @font-face {
-  font-family: 'Typewriter-dark';
-  src: local('Typewriter-dark'), url(./assets/fonts/JMH\ Typewriter-Black.ttf) format('truetype');
+  font-family: 'AvenirNextProI';
+  src: local('AvenirNextProI'), url(./assets/fonts/AvenirNextLTPro-It.otf) format('opentype');
+}
+@font-face {
+  font-family: 'AvenirNextProB';
+  src: local('AvenirNextProB'), url(./assets/fonts/AvenirNextLTPro-Bold.otf) format('opentype');
 }

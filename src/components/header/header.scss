@@ -1,5 +1,5 @@
 .header {
-  font-family: "Typewriter-light";
+  font-family: "AvenirNextProR";
   .bg-light {
     background-color: #17479e !important;
   }
@@ -7,10 +7,11 @@
     .nav-link,
     .navbar-brand {
       color: white !important;
+      font-family: "AvenirNextProB";
     }
   
     .navbar-brand:hover {
-      transform: rotate(2deg) scale(1.05);
+      transform: rotate(5deg) scale(1.07);
       transition: transform 0.8s;
     }
     .navbar-toggler {

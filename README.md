@@ -130,4 +130,4 @@ Click on the "Compare & pull request" and then open a pull request from the next
 Leave a comment if you want to add any message in detail.
 
 ## Contact Us
-[Sarvottam Kumar](mailto:sarru1291@gmail.com)
+If you've any doubt or want to ask any question, feel free to message us through [mail](mailto:sarru1291@gmail.com), [slack](https://join.slack.com/t/fossdorm/shared_invite/zt-imvn58kj-blkO4r49JHX58l9ioB0eAg), or [telegram](https://t.me/fossdorm).

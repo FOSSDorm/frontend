@@ -6,19 +6,46 @@
   A <a href="https://www.gnome.org/challenge/">GNOME Challenge 2020 </a> project that aims to bring, engage, and retain new contributors to the open source community.
 </div>
 <br/>
-It is a free and open source platform to help newcomers find open source projects based on their skill preference, then learn how to contribute to the selected project, and engage them for the long term.
+FOSSDorm is a free and open source platform to help newcomers find open source projects based on their skill preference, then learn how to contribute to the selected project, and engage them for the long term.
+<br/>
+To achieve the same target, FOSSDorm aims to fulfills three basic needs:
 
-## Why FOSSDorm?
+1. <strong>Where to find skill-based suitable project:</strong> GitHub is a large ocean where new contributors find hard to search for project meeting their demands. Hence, FOSSDorm provides a list of all verified and approved (by us) open source projects.
+2. <strong>How to contribute:</strong> Even after finding a project, contributors sometimes fail to engage with the community due to lack of good documentation for beginners. Hence, each project on FOSSDorm contains a separate page providing all informations about the project, how to set up a project at localhost, guide for contribution, and how to stay in touch with the community.
+3. <strong>How to engage contributors forever:</strong> FOSSDorm also has reward system that helps contributors build their profile displaying the amount of open source contribution they've done to the projects listed at FOSSDorm.
 
-FossDorm aims to bring new contributors to the open source community and engage them forever. To achieve the same target, the app fulfills three basic needs:
+## Open Source Tools Used By FOSSDorm
+We at FOSSDorm highly promotes the open source softwares and hence use them as well against the proprietary or closed softwares.
+- [Node.js](https://nodejs.org/)
+  
+- [NPM](https://www.npmjs.com/)
+  
+- [React.js](https://reactjs.org/)
+  
+- [Inkscape](https://inkscape.org/)
+  
+- [Storybook](https://storybook.js.org/)
+  
+- [Sass](https://sass-lang.com/)
+  
+- [Bootstrap](https://getbootstrap.com/) 
+  
+- [Semantic UI](https://semantic-ui.com/)
+  
+- [Postman](https://www.postman.com/)
+  
+#### Special mention to [Fosshost](https://fosshost.org/), who provides free hosting to FOSS projects including FOSSDorm.
 
-1. Where to find my skill-based suitable project: GitHub is a large ocean where new contributors find hard to search for project meeting their demands. Hence, this app has a section listing all verified and approved open source project.
-2. How to contribute: Even after finding a project, contributors sometimes fail to engage with the community. Documentation for beginners is one of the main reasons. Hence, each project in this app will contain a must-have page providing a minimum of three details in both text and video format. That is, about the project, how to set up a project and get started, and how to stay in touch with the community.
-3. How to engage contributors forever: Contributors need to manually paste their merged code link into the app to get a reputation point or badges. This will encourage and also build their profile displaying the amount of open source contribution.
+## How To Use FOSSDorm platform?
 
-## How To Use FOSSDorm?
+## How To Contribute To FOSSDorm project?
+Whether you're a developer or not, you can contribute to FOSSDorm in any way:
 
-## How To Contribute To FOSSDorm?
+- Documentation
+  
+- Bug fixes
+  
+- Website design
 
 #### Set up local environment
 

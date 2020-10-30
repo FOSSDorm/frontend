@@ -1,0 +1,23 @@
+.login_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .login_btn>a{
+        color: white;
+        font-family: 'AvenirNextProR';
+        font-size: 2rem;
+        
+    }
+    .login_btn{
+        // padding: 2rem;
+        border-radius: 4px;
+        background-color: #333333;
+    }
+    .login_btn a{
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        padding: 2rem;
+    }
+}

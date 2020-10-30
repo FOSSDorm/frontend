@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./header.scss";
 import { NavLink } from "react-router-dom";
+import { withCookies } from "react-cookie";
 
-const Header = () => {
+const Header = (props) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userProfileURI, setUserProfileURI] = useState("");
+  // const [cookies, setCookie] = useCookies(['token']);
+  const { cookies } = props;
+
+  console.log(cookies.get("token"));
+  useEffect(() => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        auth_token: cookies.get("token"),
+      }),
+    };
+    fetch("http://localhost:8086/users/auth", requestOptions)
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response);
+        if (response.isLoggedIn == true) {
+          setIsLoggedIn(true);
+          const pathname = "/user/" + response.username.toString();
+          console.log(response.username);
+          console.log(pathname);
+          setUserProfileURI(pathname);
+        }
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,30 +65,49 @@ const Header = () => {
                 Projects
               </NavLink>
             </li>
-            <li class="nav-item">
-              <NavLink
-                to="/login"
-                exact
-                className="nav-link"
-                activeClassName="activeNavColor"
-                data-toggle="collapse"
-                data-target=".navbar-collapse.show"
-              >
-                Log In
-              </NavLink>
-            </li>
-            <li class="nav-item">
-              <NavLink
-                to="/signup"
-                exact
-                className="nav-link"
-                activeClassName="activeNavColor"
-                data-toggle="collapse"
-                data-target=".navbar-collapse.show"
-              >
-                Sign Up
-              </NavLink>
-            </li>
+
+            {isLoggedIn ? (
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Profile
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <NavLink
+                    to={userProfileURI}
+                    exact
+                    className="dropdown-item"
+                    activeClassName="activeNavColor"
+                    // data-toggle="collapse"
+                    // data-target=".navbar-collapse.show"
+                  >
+                    Dashboard
+                  </NavLink>
+                  <a class="dropdown-item" href="http://localhost:8086/users/logout">Log out</a>
+                  
+                </div>
+              </li>
+            ) : (
+              <li class="nav-item">
+                <NavLink
+                  to="/login"
+                  exact
+                  className="nav-link"
+                  activeClassName="activeNavColor"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
+                  Log In
+                </NavLink>
+              </li>
+            )}
           </ul>
         </div>
       </nav>
@@ -66,4 +115,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default withCookies(Header);

@@ -3,7 +3,14 @@
   .bg-light {
     background-color: #17479e !important;
   }
+  .navbar-nav .dropdown-menu {
+    background-color: white !important;
+  }
   .navbar {
+    .dropdown-item{
+      color: black;
+      
+    }
     .nav-link,
     .navbar-brand {
       color: white !important;
@@ -22,7 +29,7 @@
       transition: transform 0.1s;
     }
     .activeNavColor {
-      color: #f9f871 !important;
+      color: lightgray !important;
     }
   }
 }

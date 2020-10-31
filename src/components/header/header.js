@@ -2,14 +2,18 @@ import React, { useState, useEffect } from "react";
 import "./header.scss";
 import { NavLink } from "react-router-dom";
 import { withCookies } from "react-cookie";
+import data from '../../assets/data/data.json';
 
 const Header = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userProfileURI, setUserProfileURI] = useState("");
   // const [cookies, setCookie] = useCookies(['token']);
   const { cookies } = props;
-
+  // const data=JSON.parse(data);
+  // console.log(data.API_ROOT_URL);
   console.log(cookies.get("token"));
+  const logout_api=`${data.API_ROOT_URL}/users/logout`;
+  console.log(logout_api);
   useEffect(() => {
     const requestOptions = {
       method: "POST",
@@ -18,7 +22,7 @@ const Header = (props) => {
         auth_token: cookies.get("token"),
       }),
     };
-    fetch("http://localhost:8086/users/auth", requestOptions)
+    fetch(`${data.API_ROOT_URL}/users/auth`, requestOptions)
       .then((res) => res.json())
       .then((response) => {
         console.log(response);
@@ -90,7 +94,7 @@ const Header = (props) => {
                   >
                     Dashboard
                   </NavLink>
-                  <a class="dropdown-item" href="http://localhost:8086/users/logout">Log out</a>
+                  <a class="dropdown-item" href={logout_api}>Log out</a>
                   
                 </div>
               </li>

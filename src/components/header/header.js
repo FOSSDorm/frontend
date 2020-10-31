@@ -11,7 +11,7 @@ const Header = (props) => {
   const { cookies } = props;
   // const data=JSON.parse(data);
   // console.log(data.API_ROOT_URL);
-  console.log(cookies.get("token"));
+  // console.log(cookies.get("token"));
   const logout_api=`${data.API_ROOT_URL}/users/logout`;
   console.log(logout_api);
   useEffect(() => {

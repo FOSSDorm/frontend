@@ -1,24 +1,23 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 class UserProfile extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
-  componentWillMount() {}
+  // componentWillMount() {}
 
-  componentDidMount() {}
+  // componentDidMount() {}
 
-  componentWillReceiveProps(nextProps) {}
+  // componentWillReceiveProps(nextProps) {}
 
-  shouldComponentUpdate(nextProps, nextState) {}
+  // shouldComponentUpdate(nextProps, nextState) {}
 
-  componentWillUpdate(nextProps, nextState) {}
+  // componentWillUpdate(nextProps, nextState) {}
 
-  componentDidUpdate(prevProps, prevState) {}
+  // componentDidUpdate(prevProps, prevState) {}
 
-  componentWillUnmount() {}
+  // componentWillUnmount() {}
 
   render() {
     return (
@@ -28,7 +27,5 @@ class UserProfile extends Component {
     );
   }
 }
-
-UserProfile.propTypes = {};
 
 export default UserProfile;

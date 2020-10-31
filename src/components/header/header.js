@@ -26,7 +26,7 @@ const Header = (props) => {
       .then((res) => res.json())
       .then((response) => {
         console.log(response);
-        if (response.isLoggedIn == true) {
+        if (response.isLoggedIn === true) {
           setIsLoggedIn(true);
           const pathname = "/user/" + response.username.toString();
           console.log(response.username);
@@ -35,7 +35,7 @@ const Header = (props) => {
         }
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [cookies]);
 
   return (
     <div className="header">
@@ -72,9 +72,8 @@ const Header = (props) => {
 
             {isLoggedIn ? (
               <li class="nav-item dropdown">
-                <a
+                <p
                   class="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -82,7 +81,7 @@ const Header = (props) => {
                   aria-expanded="false"
                 >
                   Profile
-                </a>
+                </p>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <NavLink
                     to={userProfileURI}

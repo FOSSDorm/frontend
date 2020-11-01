@@ -9,6 +9,8 @@ const Header = (props) => {
   const [userProfileURI, setUserProfileURI] = useState("");
   // const [cookies, setCookie] = useCookies(['token']);
   const { cookies } = props;
+  // console.log("from header");
+  // console.log(cookies.get('token'));
   // const data=JSON.parse(data);
   // console.log(data.API_ROOT_URL);
   // console.log(cookies.get("token"));

@@ -2,7 +2,6 @@ import React from "react";
 import "./login.scss";
 
 const LogIn = () => {
-  console.log(process.env.REACT_APP_kEY);
   return (
     <div className="login_page">
       <div className="login_btn">

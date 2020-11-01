@@ -5,8 +5,6 @@ import { withCookies } from 'react-cookie';
 class LoggedIn extends Component {
   constructor(props) {
     super(props);
-    const { cookies } = props;
-    console.log(cookies.get('token'));
     this.state = {
       isLoggedIn: props.match.params.isLoggedIn
     };

@@ -1,17 +1,22 @@
 import React, { Component } from "react";
 import "./loggedin.scss";
-import { withCookies } from 'react-cookie';
+import Cookie from 'js-cookie';
 
 class LoggedIn extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoggedIn: props.match.params.isLoggedIn
+      username:props.match.params.username,
+      isLoggedIn: props.match.params.isLoggedIn,
+      token:props.match.params.access_token
     };
   }
 
   render() {
-    // console.log(this.state.auth_token);
+    // console.log(this.state.token);
+    Cookie.set("token",this.state.token,{expires:2});
+    // console.log("cookie token");
+    // console.log(Cookie.get("token"));
     return (
       <div className="loggedin">
         {this.state.isLoggedIn === "success" ? (
@@ -34,4 +39,4 @@ class LoggedIn extends Component {
   }
 }
 
-export default withCookies(LoggedIn);
+export default LoggedIn;

@@ -23,7 +23,7 @@ function App() {
           <Route path="/learn-to-contribute" exact component={LearnToContribute} />
           <Route path="/reward-system" exact component={RewardSystem} />
           <Route path="/user/:username" exact component={UserProfile} />
-          <Route path="/user/:username/:isLoggedIn" exact component={LoggedIn} />
+          <Route path="/user/:username/:isLoggedIn/:access_token" exact component={LoggedIn} />
           <Route path="*" component={PageNotFound} />
         </Switch>
       </Layout>

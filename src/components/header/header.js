@@ -1,27 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./header.scss";
 import { NavLink } from "react-router-dom";
-import { withCookies } from "react-cookie";
-import data from '../../assets/data/data.json';
+import data from "../../assets/data/data.json";
+import Cookie from "js-cookie";
 
 const Header = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userProfileURI, setUserProfileURI] = useState("");
-  // const [cookies, setCookie] = useCookies(['token']);
-  const { cookies } = props;
-  // console.log("from header");
-  // console.log(cookies.get('token'));
-  // const data=JSON.parse(data);
-  // console.log(data.API_ROOT_URL);
-  // console.log(cookies.get("token"));
-  const logout_api=`${data.API_ROOT_URL}/users/logout`;
-  // console.log(logout_api);
+
   useEffect(() => {
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        auth_token: cookies.get("token"),
+        auth_token: Cookie.get("token"),
       }),
     };
     fetch(`${data.API_ROOT_URL}/users/auth`, requestOptions)
@@ -31,13 +23,13 @@ const Header = (props) => {
         if (response.isLoggedIn === true) {
           setIsLoggedIn(true);
           const pathname = "/user/" + response.username.toString();
-          console.log(response.username);
-          console.log(pathname);
+          // console.log(response.username);
+          // console.log(pathname);
           setUserProfileURI(pathname);
         }
       })
       .catch((err) => console.log(err));
-  }, [cookies]);
+  }, []);
 
   return (
     <div className="header">
@@ -95,8 +87,15 @@ const Header = (props) => {
                   >
                     Dashboard
                   </NavLink>
-                  <a class="dropdown-item" href={logout_api}>Log out</a>
-                  
+                  <button
+                    class="dropdown-item"
+                    onClick={() => {
+                      Cookie.remove("token");
+                      setIsLoggedIn(false);
+                    }}
+                  >
+                    Log out
+                  </button>
                 </div>
               </li>
             ) : (
@@ -120,4 +119,4 @@ const Header = (props) => {
   );
 };
 
-export default withCookies(Header);
+export default Header;

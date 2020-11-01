@@ -7,16 +7,13 @@ import { BrowserRouter } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 
 import ScrollToTop from "./hoc/scrollToTop/scrollToTop";
-import { CookiesProvider } from "react-cookie";
 
 const app = (
-  <CookiesProvider>
     <BrowserRouter>
       <ScrollToTop>
         <App />
       </ScrollToTop>
     </BrowserRouter>
-  </CookiesProvider>
 );
 
 ReactDOM.render(app, document.getElementById("root"));

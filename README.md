@@ -38,8 +38,6 @@ We at FOSSDorm highly promotes the open source softwares and hence use them as w
   
 #### Special mention to [Fosshost](https://fosshost.org/), who provides free hosting to FOSS projects including FOSSDorm.
 
-## How To Use FOSSDorm platform?
-
 ## How To Contribute To FOSSDorm project (Frontend)?
 Whether you're a developer or not, you can contribute to FOSSDorm in any of the following ways:
 
@@ -82,6 +80,7 @@ If you're able to see website running at localhost, then you're ready to make ch
 <p align="center"><img src="docs/images/readme/localhost_run_successfully.png" alt="localhost site run successfully" width="auto" height="auto"></p>
 
 ### Make changes and create pull request
+
 **1. Create your own branch and checkout**
 
 Though you can also make changes in your `main` branch and create pull request, we highly recommend you to make your own new branch and checkout to it before making any changes.
@@ -117,7 +116,7 @@ git remote --set-upstream origin <new-branch-name>
 ```
 If you're prompted to enter GitHub username and password, enter your credential and you're ready to create a pull request.
 <p align="center"><img src="docs/images/readme/push_changes.png" alt="Push new changes" width="auto" height="auto"></p>
-Next time, you can only run `git push` to push new changes to remote.
+Next time, you can only run `git push origin` to push new changes to remote.
 
 **5. Create pull request**
 
@@ -128,6 +127,22 @@ Once you push all changes to your remote GitHub server, go to your own GitHub ac
 Click on the "Compare & pull request" and then open a pull request from the next page.
 <p align="center"><img src="docs/images/readme/open_pull_request.png" alt="open pull request" width="auto" height="auto"></p>
 Leave a comment if you want to add any message in detail.
+
+### Update your local or remote repo with parent repo
+
+To sync your local or remote repo with parent repo (from where you've forked), run commands:
+
+```
+git remote add upstream https://github.com/FOSSDorm/frontend.git
+
+git pull upstream main
+
+```
+
+
+<br/>
+
+**Note:** At localhost, you may find redirecting to production site in the login system. This happens as the GitHub OAuth callback is set to production site. To make it work on localhost, I need to change the callback url. Hence, currently, you may work on other components of website until I find its solution. 
 
 ## Contact Us
 If you've any doubt or want to ask any question, feel free to message us through [mail](mailto:sarru1291@gmail.com), [slack](https://join.slack.com/t/fossdorm/shared_invite/zt-imvn58kj-blkO4r49JHX58l9ioB0eAg), or [telegram](https://t.me/fossdorm).
